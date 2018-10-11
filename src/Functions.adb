@@ -45,10 +45,17 @@ package body Functions with SPARK_Mode => On is
    end BinaryToDecimal;
 
 
+   function PolynomialFunctionSolver
+     (Poly : Polynomic; Value : Integer) return Integer is
 
+      Result : Integer := 0.0;
 
-
-
+   begin
+      for I in Poly'Range loop
+         Result := Result + (Poly (I) * (value**(Poly'Last-I)));
+      end loop;
+      return result;
+   end PolynomialFunctionSolver;
 
 
 end Functions;
