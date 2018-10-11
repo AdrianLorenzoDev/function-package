@@ -3,8 +3,8 @@ with Ada.Text_IO; use Ada.Text_IO;
 
 package body Functions with SPARK_Mode => On is
 
-   function DecimalToBinary ( Dec : Integer ) return Binary is
-      BinaryNumber : Binary := (others => false);
+   function DecimalToBinary ( Dec : Integer ) return B_Binary is
+      BinaryNumber : B_Binary := (others => false);
       DecimalNumber : Integer := Dec;
    begin
 
@@ -29,5 +29,26 @@ package body Functions with SPARK_Mode => On is
       return BinaryNumber;
 
    end DecimalToBinary;
+
+   function BinaryToDecimal
+     (Binary : B_Binary) return Integer is
+      res : Integer :=0;
+      counter : Integer :=0;
+   begin
+      for I in reverse 1 .. Binary'Last loop
+         if (Binary(I) = true) then
+         res := res + 2**counter;
+         end if;
+         counter := counter +1;
+   end loop;
+        return res;
+   end BinaryToDecimal;
+
+
+
+
+
+
+
 
 end Functions;

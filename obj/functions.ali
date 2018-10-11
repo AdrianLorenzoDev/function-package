@@ -1,0 +1,60 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U functions%b		functions.adb		f32c1395 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U functions%s		functions.ads		094f2d4d EE NE OO PK
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D functions.ads		20181011085846 094f2d4d functions%s
+D functions.adb		20181011085906 727e8d82 functions%b
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 9|2r6 2r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 9|2w10 2r27
+X 8 functions.ads
+1K9*Functions 17l5 17e14 9|4b14 54l5 54t14
+3A9*B_Binary(boolean)<integer> 6r29 13r16 9|6r54 7r22 34r16
+5V13*DecimalToBinary{3A9} 6>7 9|6b13 31l8 31t23
+6i7 Dec{integer} 9|6b31 8r34
+12V13*BinaryToDecimal{integer} 13>7 9|33b13 45l8 45t23
+13a7 Binary{3A9} 9|34b7 38r29 39r14
+X 9 functions.adb
+7a7 BinaryNumber{8|3A9} 11r24 14m13 16m13 22r20 29r14
+8i7 DecimalNumber{integer} 13r14 19m10 19r27 21r13
+11i11 I{integer} 14r27 16r26
+35i7 res{integer} 40m10 40r17 44r16
+36i7 counter{integer} 40r26 42m10 42r21
+38i11 I{integer} 39r21
+
