@@ -1,61 +1,84 @@
-
-with Ada.Text_IO; use Ada.Text_IO;
-
 package body Functions with SPARK_Mode => On is
 
-   function DecimalToBinary ( Dec : Integer ) return B_Binary is
-      BinaryNumber : B_Binary := (others => false);
-      DecimalNumber : Integer := Dec;
+   function Sucesion
+     (N_Elements: Positive; By : Natural) return T_Sucesion is
+
+      Result : T_Sucesion (1 .. N_Elements) := (others => 0);
    begin
 
-      for I in reverse BinaryNumber'Range loop
+      for I in 1 .. N_Elements loop
+         Result (I) := By * I;
 
-         if (DecimalNumber rem 2) = 0 then
-            BinaryNumber (I) := false;
-         else
-            BinaryNumber(I) := true;
-         end if;
-
-         DecimalNumber := DecimalNumber / 2;
-
-         if DecimalNumber <= 0 then
-            return BinaryNumber;
-         end if;
-
---       pragma Loop_Invariant =>
---           (DecimalNumber = DecimalNumber'Loop_Entry/(2*I));
+         pragma Loop_Invariant
+           (for all J in 1..I => Result (J) = (By*J));
       end loop;
 
-      return BinaryNumber;
+      return Result;
 
-   end DecimalToBinary;
+   end Sucesion;
 
-   function BinaryToDecimal
-     (Binary : B_Binary) return Integer is
-      res : Integer :=0;
-      counter : Integer :=0;
+   function PositiveOrNegative (Num : Integer) return Boolean is
    begin
-      for I in reverse 1 .. Binary'Last loop
-         if (Binary(I) = true) then
-         res := res + 2**counter;
-         end if;
-         counter := counter +1;
-   end loop;
-        return res;
-   end BinaryToDecimal;
+      if Num >= 0 then
+         return True;
+      else
+         return False;
+      end if;
+   end PositiveOrNegative;
 
-
-   function PolynomialFunctionSolver
-     (Poly : Polynomic; Value : Integer) return Integer is
-
-      Result : Integer := 0.0;
-
+   function PositiveOrNegativeVector (Positiv : Positives) return Positives is
+      ResArray : Positives (Positiv'Range) := (others=>0);
    begin
-      for I in Poly'Range loop
-         Result := Result + (Poly (I) * (value**(Poly'Last-I)));
+      for I in Positiv'Range loop
+         ResArray(I) := Positiv(I) * (-1);
+
+         pragma Loop_Invariant
+           ((for all J in Positiv'First .. I =>
+                 (ResArray(J) = -1 * Positiv(J))));
       end loop;
-      return result;
-   end PolynomialFunctionSolver;
+      return ResArray;
+   end PositiveOrNegativeVector;
+
+
+   function MultVector
+     ( Vector: V_Vector) return Positive is
+      res : Positive := 1;
+   begin
+      for I in Vector'First .. Vector'Last loop
+         res := res * Vector(I);
+
+         pragma Loop_Invariant
+           ((if I = Vector'First then
+                 res = Vector(1)
+            elsif I = Vector'Last then
+               res = Vector(1) * Vector(2) * Vector(3)
+            elsif I = (Vector'First+1) then
+               res = Vector(1) * Vector(2)));
+
+      end loop;
+      return res;
+   end MultVector;
+
+
+   function Midterm
+     (Values : Vector ; From : Positive ; To : Positive) return B_Binary is
+      Result : B_Binary (Values'Range) := (others => False);
+   begin
+      for I in Values'Range loop
+         if Values(I) >= From and Values(I) <= To then
+            Result(I) := True;
+         end if;
+
+         pragma Loop_Invariant
+           ( for all J in Values'First .. I =>
+             (if Result(J) then (Values(J) >= From and Values(J) <= To)
+              else (Values(J) <= From or Values(J) >= To)
+             )
+           );
+      end loop;
+      return Result;
+   end Midterm;
 
 
 end Functions;
+

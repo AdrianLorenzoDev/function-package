@@ -1,0 +1,130 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U test_functions%b	test_functions.adb	314fc4dc OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W functions%s		functions.adb		functions.ali
+Z system%s		system.ads		system.ali
+W test_assertions%s	test_assertions.adb	test_assertions.ali
+
+D ada.ads		20180524051735 76789da1 ada%s
+D a-ioexce.ads		20180524051734 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051735 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051736 881db35a ada.text_io%s
+D functions.ads		20181018110825 8817b0f2 functions%s
+D interfac.ads		20180524051734 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051734 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051735 085b6ffb system%s
+D s-crtl.ads		20180524051734 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051736 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051736 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051736 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20180930163717 1487d8c5 test_assertions%s
+D test_functions.adb	20181018111217 25c21fb1 test_functions%b
+X 1 ada.ads
+16K9*Ada 20e8 14|4r6 4r27
+X 4 a-textio.ads
+49K13*Text_IO 471e16 14|4w10 4r31
+166U14*New_Line 14|193s4 194s4 197s4 202s4 203s4 206s4 211s4 212s4 215s4
+. 220s4 221s4 224s4 229s4 230s4 233s4 237s4 238s4
+263U14*Put_Line 14|192s4 196s4 205s4 214s4 223s4 232s4
+X 5 functions.ads
+2K9*Functions 87e14 14|6w6 6r26
+4A9*T_Sucesion(natural)<integer> 14|12r15 22r14 32r14 42r14
+6V13*Sucesion{4A9} 14|14s20 24s20 34s20 44s20
+20A9*Positives(integer)<integer>
+23V13*PositiveOrNegative{boolean} 14|55s20 63s21 71s21 79s20
+39V13*PositiveOrNegativeVector{20A9} 14|88s20 97s20 106s20 115s20
+54V13*MultVector{positive} 14|126s20 134s20 142s20 150s21
+67A9*B_Binary(boolean)<integer> 14|159r22 169r22 179r22
+69V13*MidTerm{67A9} 14|161s20 171s21 181s20
+X 13 test_assertions.ads
+3K9*Test_Assertions 18e20 14|5w6 5r27
+12U14*Assert_True 14|14s7 24s7 34s7 44s7 55s7 79s7 88s7 97s7 106s7 115s7
+. 126s7 134s7 142s7 161s7 171s7 181s7
+15U14*Assert_False 14|63s7 71s7 150s7
+X 14 test_functions.adb
+8U11*Test_Functions 8b11 240l5 240t19
+11U14 Test_S_1 19l8 19t16 198s4
+12a7 test{5|4A9} 14r38
+21U14 Test_S_2 29l8 29t16 199s4
+22a7 test{5|4A9} 24r38
+31U14 Test_S_3 39l8 39t16 200s4
+32a7 test{5|4A9} 34r39
+41U14 Test_S_4 49l8 49t16 201s4
+42a7 test{5|4A9} 44r38
+53U14 Test_PON_1 59l8 59t18 207s4
+61U14 Test_PON_2 67l8 67t18 208s4
+69U14 Test_PON_3 75l8 75t18 209s4
+77U14 Test_PON_4 83l8 83t18 210s4
+86U14 Test_PONV_1 93l8 93t19 216s4
+95U14 Test_PONV_2 102l8 102t19 217s4
+104U14 Test_PONV_3 111l8 111t19 218s4
+113U14 Test_PONV_4 120l8 120t19 219s4
+124U14 Test_MV_1 130l8 130t17 225s4
+132U14 Test_MV_2 138l8 138t17 226s4
+140U14 Test_MV_3 146l8 146t17 227s4
+148U14 Test_MV_4 154l8 154t17 228s4
+158U14 Test_MT_1 166l8 166t17 234s4
+159a7 Array_Test_1{5|67A9} 161r51
+168U14 Test_MT_2 176l8 176t17 235s4
+169a7 Array_Test_2{5|67A9} 171r52
+178U14 Test_MT_3 186l8 186t17 236s4
+179a7 Array_Test_3{5|67A9} 181r51
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS test_functions__test_s_1 0
+GG EK_GLOBALS test_functions__test_s_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__sucesion local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_s_2 0
+GG EK_GLOBALS test_functions__test_s_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__sucesion local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_s_3 0
+GG EK_GLOBALS test_functions__test_s_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__sucesion local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_s_4 0
+GG EK_GLOBALS test_functions__test_s_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__sucesion local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_pon_1 0
+GG EK_GLOBALS test_functions__test_pon_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegative local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_pon_2 0
+GG EK_GLOBALS test_functions__test_pon_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_false__2 functions__positiveornegative local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_pon_3 0
+GG EK_GLOBALS test_functions__test_pon_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_false__2 functions__positiveornegative local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_pon_4 0
+GG EK_GLOBALS test_functions__test_pon_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegative local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_ponv_1 0
+GG EK_GLOBALS test_functions__test_ponv_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegativevector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_ponv_2 0
+GG EK_GLOBALS test_functions__test_ponv_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegativevector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_ponv_3 0
+GG EK_GLOBALS test_functions__test_ponv_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegativevector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_ponv_4 0
+GG EK_GLOBALS test_functions__test_ponv_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__positiveornegativevector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mv_1 0
+GG EK_GLOBALS test_functions__test_mv_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__multvector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mv_2 0
+GG EK_GLOBALS test_functions__test_mv_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__multvector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mv_3 0
+GG EK_GLOBALS test_functions__test_mv_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__multvector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mv_4 0
+GG EK_GLOBALS test_functions__test_mv_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_false__2 functions__multvector local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mt_1 0
+GG EK_GLOBALS test_functions__test_mt_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__midterm local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mt_2 0
+GG EK_GLOBALS test_functions__test_mt_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__midterm local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions__test_mt_3 0
+GG EK_GLOBALS test_functions__test_mt_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 test_assertions__assert_true__2 functions__midterm local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_functions 0
+GG EK_GLOBALS test_functions local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 9 ada__text_io__new_line__2 ada__text_io__put_line__2 test_assertions__assert_true__2 test_assertions__assert_false__2 functions__sucesion functions__positiveornegative functions__positiveornegativevector functions__multvector functions__midterm local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

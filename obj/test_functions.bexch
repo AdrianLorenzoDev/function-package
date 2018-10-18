@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__test_functions.o
+[PROJECT FILES]
+/Users/adrianlorenzomelian/Desktop/PR3/functions/default.gpr
+20181014173923
+[BOUND OBJECT FILES]
+/Users/adrianlorenzomelian/Desktop/PR3/functions/obj/Functions.o
+/Users/adrianlorenzomelian/Desktop/PR3/functions/obj/test_assertions.o
+/Users/adrianlorenzomelian/Desktop/PR3/functions/obj/test_functions.o
+[GENERATED SOURCE FILES]
+b__test_functions.ads
+b__test_functions.adb
+b__test_functions.ali
+[RESULTING OPTIONS]
+-L/Users/adrianlorenzomelian/Desktop/PR3/functions/obj/
+-L/Users/adrianlorenzomelian/Desktop/PR3/functions/obj/
+-L/users/adrianlorenzomelian/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/
+-static
+/users/adrianlorenzomelian/opt/gnat/2018/lib/gcc/x86_64-apple-darwin16.7.0/7.3.1/adalib/libgnat.a

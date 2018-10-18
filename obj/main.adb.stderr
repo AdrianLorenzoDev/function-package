@@ -1,2 +1,1 @@
-functions.ads:8:13: "none" is not visible (more references follow)
-functions.ads:8:13: non-visible declaration at i-cstrea.ads:230
+main.adb:8:01: statement expected

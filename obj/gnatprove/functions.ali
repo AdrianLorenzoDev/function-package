@@ -1,0 +1,78 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U functions%b		functions.adb		53dc1241 OO PK
+
+U functions%s		functions.ads		8817b0f2 OO PK
+
+D functions.ads		20181018110825 8817b0f2 functions%s
+D functions.adb		20181018111232 dbcba2b3 functions%b
+D system.ads		20180524051735 085b6ffb system%s
+X 1 functions.ads
+2K9*Functions 87l5 87e14 2|1b14 83l5 83t14
+4A9*T_Sucesion(natural)<integer> 7r51 2|4r50 6r16
+6V13*Sucesion{4A9} 7>7 7>30 9r18 15r47 2|3b13 18l8 18t16
+7i7 N_Elements{positive} 9r38 11r13 13r34 15r33 2|4b7 6r33 9r21
+7i30 By{natural} 9r50 12r15 13r15 15r71 2|4b29 10r24 13r48
+15i23 J{integer} 15r64 15r69
+20A9*Positives(integer)<integer> 40r17 40r35 2|29r49 29r67 30r18
+21A9*V_Vector(positive)<integer> 55r15 2|44r16
+23V13*PositiveOrNegative{boolean} 24>7 30r17 32r13 2|20b13 27l8 27t26
+24i7 Num{integer} 26r13 27r10 29r18 31r14 2|20b33 22r10
+39V13*PositiveOrNegativeVector{20A9} 40>7 42r18 47r28 48r17 2|29b13 40l8
+. 40t32
+40a7 Positiv{20A9} 42r54 44r27 45r16 48r54 2|29b39 30r29 32r16 33r25 36r27
+. 37r38
+44i22 I{integer} 45r24
+47i23 I{integer} 48r49 48r62
+54V13*MultVector{positive} 55>7 61r8 2|43b13 60l8 60t18
+55a7 Vector{21A9} 57r13 57r41 58r15 58r45 58r57 61r28 61r35 61r51 61r58 61r78
+. 61r85 2|44b8 47r16 47r32 48r23 51r21 52r24 53r23 54r22 54r34 54r46 55r24
+. 56r22 56r34
+66A9*Vector(positive)<integer> 70r16 2|64r16
+67A9*B_Binary(boolean)<integer> 70r65 2|64r65 65r16
+69V13*MidTerm{67A9} 70>7 70>25 70>43 71r18 79r21 2|63b13 80l8 80t15
+70a7 Values{66A9} 71r37 75r17 76r17 76r31 78r28 80r23 80r45 82r21 82r42 2|64b7
+. 65r26 67r16 68r13 68r35 73r27 74r34 74r56 75r21 75r42
+70i25 From{positive} 71r45 74r8 80r36 82r34 2|64b25 68r26 74r47 75r34
+70i43 To{positive} 71r51 74r16 80r58 82r55 2|64b43 68r48 74r69 75r55
+78i23 I{integer} 79r36 80r30 80r52 82r28 82r49
+X 2 functions.adb
+6a7 Result{1|4A9} 10m10 13r34 16r14
+9i11 I{integer} 10r18 10r29 13r29
+13i21 J{integer} 13r42 13r51
+30a7 ResArray{1|20A9} 33m10 37r19 39r14
+32i11 I{integer} 33r19 33r33 36r44
+36i22 J{integer} 37r28 37r46
+45i7 res{positive} 48m10 48r17 52r18 54r16 56r16 59r14
+47i11 I{integer} 48r30 51r17 53r19 55r19
+65a7 Result{1|67A9} 69m13 74r18 79r14
+67i11 I{integer} 68r20 68r42 69r20 73r43
+73i22 J{integer} 74r25 74r41 74r63 75r28 75r49
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS functions__sucesion 0
+GG EK_GLOBALS functions__sucesion local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS functions__positiveornegative 0
+GG EK_GLOBALS functions__positiveornegative local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS functions__positiveornegativevector 0
+GG EK_GLOBALS functions__positiveornegativevector local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS functions__multvector 0
+GG EK_GLOBALS functions__multvector local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS functions__midterm 0
+GG EK_GLOBALS functions__midterm local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS functions 0
+GG EK_GLOBALS functions local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

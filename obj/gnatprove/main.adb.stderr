@@ -1,1 +1,1 @@
-main.adb:1:14: file "programacion.ads" not found
+main.adb:8:15: "BinaryToDecimal" is undefined
